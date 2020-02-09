@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography renders correctly 1`] = `
+<p
+  className="MuiTypography-root-35 MuiTypography-body1-44 Component-h1-25 Component-colorBlack-6 Component-font-18"
+>
+  test
+</p>
+`;
