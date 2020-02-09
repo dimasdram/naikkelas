@@ -1,2 +1,4 @@
 import Typography from './Typography';
-export { Typography };
+import Button from './Button';
+import Dialog from './Dialog';
+export { Typography, Button, Dialog };
