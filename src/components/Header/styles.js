@@ -1,6 +1,17 @@
-import { COLOR_BLACK, COLOR_GRAY, COLOR_RED, COLOR_WHITE } from '../../styles';
+import {
+  COLOR_BLACK,
+  COLOR_GRAY,
+  COLOR_PRIMARY,
+  COLOR_WHITE,
+  COLOR_ACCENT
+} from '../../styles';
 
 const styles = {
+  bannerNaikelas: {
+    float: 'left',
+    paddingTop: '12px',
+    paddingLeft: '24px'
+  },
   buttonDialog: {
     margin: '13.5px',
     minWidth: '121px'
@@ -30,27 +41,20 @@ const styles = {
   },
   dropdownContent: {
     display: 'flex',
-    fontFamily: 'Ubuntu',
+    fontFamily: 'Raleway',
     fontSize: '14px',
     letterSpacing: '0.1em',
     lineHeight: '17px'
   },
   header: {
-    align: 'center',
-    background: COLOR_WHITE,
+    background: COLOR_PRIMARY,
+    opacity: '0.86',
+    display: 'inline',
     height: 'auto',
-    paddingRight: '5%',
-    position: 'static',
     width: '100%'
   },
-  imageHeader: {
-    cursor: 'pointer',
-    height: '52px',
-    marginRight: '20px',
-    width: '127px'
-  },
   menu: {
-    marginLeft: '8%',
+    float: 'right',
     position: 'static'
   },
   menuRight: {
@@ -70,12 +74,13 @@ const styles = {
   },
   text: {
     '&:hover': {
-      color: COLOR_RED
+      color: COLOR_ACCENT
     },
-    color: COLOR_BLACK,
-    fontFamily: 'Ubuntu',
-    fontSize: '12px',
-    fontWeight: 'bold',
+    color: COLOR_WHITE,
+    fontFamily: 'Raleway',
+    fontSize: '15px',
+    fontWeight: '600',
+    fontStyle: 'normal',
     justifyContent: 'center',
     letterSpacing: '0.1em',
     lineHeight: '14px',
@@ -83,10 +88,10 @@ const styles = {
   },
   textActive: {
     '&:hover': {
-      color: COLOR_RED
+      color: COLOR_WHITE
     },
-    color: COLOR_RED,
-    fontFamily: 'Ubuntu',
+    color: COLOR_ACCENT,
+    fontFamily: 'Raleway',
     fontSize: '12px',
     fontWeight: 'bold',
     justifyContent: 'center',
@@ -110,7 +115,7 @@ const styles = {
       color: COLOR_BLACK
     },
     color: COLOR_BLACK,
-    fontFamily: 'Ubuntu',
+    fontFamily: 'Raleway',
     fontSize: '12px',
     fontWeight: 'normal',
     justifyContent: 'center',

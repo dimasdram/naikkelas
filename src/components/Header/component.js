@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { IMAGES, ROUTES } from '../../configs';
+import { ROUTES, IMAGES } from '../../configs';
 import { history } from '../../store/configureStore';
 import Dialog from '../elements/Dialog';
 import Button from '../elements/Button';
 import Typography from '../elements/Typography';
-import { AppBar, Toolbar, Menu, MenuItem } from '@material-ui/core';
+import { AppBar, Toolbar, MenuItem, Menu } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { KeyboardArrowUp, KeyboardArrowDown } from '@material-ui/icons';
 
@@ -62,11 +62,11 @@ export default class Component extends React.Component {
     });
   };
 
-  _handleClickProfil = event => {
+  _handleClickAhli = event => {
     this.setState({ anchorProfil: event.currentTarget });
   };
 
-  _handleCloseProfil = () => {
+  _handleCloseAhli = () => {
     this.setState({ anchorProfil: null });
   };
 
@@ -142,41 +142,24 @@ export default class Component extends React.Component {
   render() {
     const {
       classes,
-      location: { pathname },
-      service
+      location: { pathname }
     } = this.props;
-    const { anchorEl } = this.state;
+    const { anchorEl, anchorProfil } = this.state;
     return (
       <div>
         <AppBar className={classes.header}>
+          <Link className={classes.bannerNaikelas} to={ROUTES.HOME()}>
+            <img src={IMAGES.HEADER} />
+          </Link>
           <Toolbar className={classes.menu}>
-            <Link to={ROUTES.HOME()}>
-              <img className={classes.imageHeader} src={IMAGES.LOGO_DSA_SVG} />
-            </Link>
-            <MenuItem
-              className={pathname === '/' ? classes.textActive : classes.text}
-              onClick={this._handleClickHome}
-            >
-              BERANDA
-            </MenuItem>
-            <MenuItem
-              className={
-                pathname === '/tentang-kami' ? classes.textActive : classes.text
-              }
-              onClick={this._handleClickAbout}
-            >
-              TENTANG KAMI
-            </MenuItem>
             <MenuItem
               aria-owns={anchorEl ? 'simple-menu' : undefined}
               className={
-                pathname.substr(0, 8) === '/layanan'
-                  ? classes.textActive
-                  : classes.text
+                pathname === '/kategori' ? classes.textActive : classes.text
               }
               onClick={this._handleClickMenu}
             >
-              LAYANAN
+              Kategori
               {anchorEl ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
             </MenuItem>
             <Menu
@@ -185,57 +168,68 @@ export default class Component extends React.Component {
               onClose={this._handleCloseMenu}
               open={Boolean(anchorEl)}
             >
-              {service.map((data, key) => (
-                <MenuItem
-                  className={classes.dropdownContent}
-                  key={key}
-                  onClick={() => history.push(ROUTES.LAYANAN(data.slug))}
-                >
-                  {data.name}
-                </MenuItem>
-              ))}
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Mikro
+              </MenuItem>
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Kecil
+              </MenuItem>
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Menengah
+              </MenuItem>
+            </Menu>
+            <MenuItem
+              aria-owns={anchorProfil ? 'simple-menu' : undefined}
+              className={
+                pathname === '/ahli' ? classes.textActive : classes.text
+              }
+              onClick={this._handleClickAhli}
+            >
+              Ahli
+              {anchorProfil ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+            </MenuItem>
+            <Menu
+              anchorEl={anchorProfil}
+              className={classes.dropdown}
+              onClose={this._handleCloseAhli}
+              open={Boolean(anchorProfil)}
+            >
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Budidaya Lele
+              </MenuItem>
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Menanam Jagung
+              </MenuItem>
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Bertani
+              </MenuItem>
             </Menu>
             <MenuItem
               className={
-                pathname === '/faq' ? classes.textActive : classes.text
+                pathname === '/tentang-kami' ? classes.textActive : classes.text
               }
-              onClick={this._handleClickFAQ}
+              onClick={this._handleClickAbout}
             >
-              FAQ
+              Sign In
             </MenuItem>
-            <div className={classes.menuRight}>
-              <Button
-                background="white"
-                className={classes.buttonRegister}
-                name="btn2"
-                onClick={this._handleButtonRegister}
-                variant="outlined"
-              >
-                <Typography
-                  className={classes.textButton}
-                  color="black"
-                  variant="formLabelCap"
-                >
-                  REGISTER
-                </Typography>
-              </Button>
-              &nbsp;&nbsp;&nbsp;
-              <Button
-                background="red"
-                className={classes.buttonLogin}
-                name="btn3"
-                onClick={this._handleButtonLogin}
-              >
-                <Typography
-                  className={classes.textButton}
-                  color="white"
-                  variant="formLabelCap"
-                >
-                  LOGIN
-                </Typography>
-              </Button>
-            </div>
-            )}
           </Toolbar>
         </AppBar>
       </div>

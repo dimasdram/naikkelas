@@ -58,11 +58,9 @@ export default {
       // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
       trackJSToken: ''
     }),
-    
+
     // Copy assets directory
-    new CopyWebpackPlugin([
-      {from: 'src/assets', to: 'assets'}
-    ]),
+    new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
   ],
   module: {
     rules: [
@@ -142,12 +140,11 @@ export default {
                 minimize: true,
                 sourceMap: true
               }
-            }, {
+            },
+            {
               loader: 'postcss-loader',
               options: {
-                plugins: () => [
-                  require('autoprefixer')
-                ],
+                plugins: () => [require('autoprefixer')],
                 sourceMap: true
               }
             }

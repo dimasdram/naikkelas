@@ -4,9 +4,10 @@ const styles = {
     fontWeight: 'bold',
     textTransform: 'uppercase'
   },
-  buttonSmall: {
-    fontSize: '14px',
-    fontWeight: 'bold'
+  title: {
+    fontSize: '50px',
+    fontWeight: '500',
+    color: '#FFFFFF'
   },
   caption: {
     fontSize: '14px',
@@ -70,7 +71,7 @@ const styles = {
     textTransform: 'uppercase'
   },
   font: {
-    fontFamily: 'Ubuntu',
+    fontFamily: 'Raleway',
     fontStyle: 'normal'
   },
   footer: {
@@ -104,65 +105,8 @@ const styles = {
     fontSize: '11px',
     fontWeight: 'normal'
   },
-  h1: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    margin: '70px',
-    textAlign: 'center',
-    textTransform: 'uppercase'
-  },
-  h2: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-    letterSpacing: '0.1em',
-    lineHeight: '100%',
-    margin: '70px',
-    textAlign: 'center',
-    textTransform: 'uppercase'
-  },
-  headFormLabel: {
-    fontSize: '18px',
-    fontWeight: 'bold',
-    letterSpacing: '0.1em',
-    lineHeight: '21px'
-  },
-  labelBold: {
-    fontSize: '12px',
-    fontWeight: 'bold',
-    letterSpacing: '0.1em',
-    lineHeight: '14px'
-  },
-  pageNotfound: {
-    fontSize: '36px',
-    fontWeight: 'bold',
-    letterSpacing: '0.1em',
-    lineHeight: '41px'
-  },
-  subLevel: {
-    fontSize: '13px',
-    fontWeight: 'normal',
-    letterSpacing: '0.1em',
-    lineHeight: '15px'
-  },
-  subLevelBold: {
-    fontSize: '13px',
-    fontWeight: 'bold',
-    letterSpacing: '0.1em',
-    lineHeight: '14px'
-  },
   text: {
     fontSize: '18px',
-    lineHeight: '22px'
-  },
-  textHead: {
-    fontSize: '24px',
-    fontWeight: 'bold'
-  },
-  ubuntuFontStyle: {
-    alignItems: 'center',
-    display: 'flex',
-    fontSize: '18px',
-    letterSpacing: '0.1em',
     lineHeight: '22px'
   }
 };

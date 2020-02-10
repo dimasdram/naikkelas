@@ -5,7 +5,9 @@ import {
   COLOR_BLACK,
   COLOR_BLUE_BUTTON,
   COLOR_ORANGE,
-  COLOR_GREY
+  COLOR_GREY,
+  COLOR_ACCENT,
+  COLOR_PRIMARY
 } from '../../../styles';
 const styles = {
   backgroundGreen: {
@@ -25,6 +27,12 @@ const styles = {
       backgroundColor: COLOR_WHITE
     },
     backgroundColor: COLOR_WHITE
+  },
+  backgroundNormal: {
+    '&:hover': {
+      backgroundColor: COLOR_PRIMARY
+    },
+    backgroundColor: COLOR_ACCENT
   },
   btn1: {
     fontSize: '16px',
@@ -63,8 +71,9 @@ const styles = {
     color: COLOR_ORANGE
   },
   root: {
+    marginTop: '14px',
     borderRadius: '3px',
-    fontFamily: 'Ubuntu',
+    fontFamily: 'Raleway',
     fontWeight: 'bold',
     letterSpacing: '0.1em'
   }

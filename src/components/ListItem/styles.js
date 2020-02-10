@@ -1,4 +1,4 @@
-import { COLOR_PRIMARY, COLOR_PRIMARY_2, COLOR_WHITE } from '../../styles';
+import { COLOR_PRIMARY, COLOR_ACCENT, COLOR_WHITE } from '../../styles';
 
 const styles = {
   item: {
@@ -9,7 +9,7 @@ const styles = {
     padding: '2px 15px',
     textDecoration: 'none',
     '&:hover': {
-      backgroundColor: COLOR_PRIMARY_2
+      backgroundColor: COLOR_ACCENT
     }
   }
 };

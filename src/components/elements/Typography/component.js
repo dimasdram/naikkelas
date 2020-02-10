@@ -32,7 +32,7 @@ export default class Component extends React.Component {
 Component.defaultProps = {
   children: 'text',
   className: '',
-  color: 'black',
+  color: 'white',
   variant: 'h1'
 };
 
