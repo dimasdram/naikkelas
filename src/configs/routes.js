@@ -1,6 +1,13 @@
 const routes = {
-  HOME() { return `/`; },
-  DEVELOPER(param) { return `/developer/${param}`; }
+  HOME() {
+    return `/`;
+  },
+  DETAILCLASS() {
+    return `/detailclass`;
+  },
+  DEVELOPER(param) {
+    return `/developer/${param}`;
+  }
 };
 
 export default routes;

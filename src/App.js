@@ -12,7 +12,11 @@ export default class App extends React.Component {
         <CssBaseline />
         <Switch>
           <Route exact path={ROUTES.HOME()} component={pages.Home} />
-          <Route exact path={ROUTES.DEVELOPER(':name')} component={pages.Developer} />
+          <Route
+            exact
+            path={ROUTES.DETAILCLASS()}
+            component={pages.DetailClass}
+          />
           <Route component={pages.Error404} />
         </Switch>
       </main>

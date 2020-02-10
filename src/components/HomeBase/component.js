@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../../components/Header';
+import { Footer } from '../elements';
 export default class Component extends React.Component {
   render() {
     const { classes, children, service } = this.props;
@@ -8,6 +9,7 @@ export default class Component extends React.Component {
       <div className={classes.root}>
         <Header service={service} />
         {children}
+        <Footer />
       </div>
     );
   }

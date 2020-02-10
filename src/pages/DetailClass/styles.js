@@ -7,12 +7,11 @@ const styles = {
     minWidth: '100%',
     minHeight: '100%'
   },
-  content: {
-    top: '300px',
-    left: '850px',
+  contentClass1: {
+    top: '50px',
     marginBottom: '24px',
     position: 'relative',
-    width: '35%',
+    width: '100%',
     padding: '20px'
   },
   content2: {
@@ -59,17 +58,8 @@ const styles = {
   paraAhliText: {
     textAlign: 'center'
   },
-  hightlightClass: {
-    marginTop: '24px',
-    float: 'left'
-  },
-  imageParaAhli: {
-    marginBottom: '12px'
-  },
-  headerCaption: {
-    color: COLOR_WHITE,
-    fontSize: '24px',
-    fontFamily: 'Raleway'
+  wrapper: {
+    width: '80%'
   },
   '@font-face': [
     {

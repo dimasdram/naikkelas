@@ -83,6 +83,11 @@ const styles = {
     fontSize: '11px',
     fontWeight: '300'
   },
+  formCaptionParagraphLink: {
+    fontSize: '11px',
+    marginLeft: '8px',
+    fontWeight: '300'
+  },
   formLabel: {
     fontSize: '14px',
     fontWeight: 'bold',
