@@ -51,7 +51,8 @@ const styles = {
     fontFamily: 'CircularStd'
   },
   latestClass: {
-    marginTop: '24px'
+    top: '24px',
+    margin: 'auto'
   },
   hightlightClassText: {
     float: 'left'
@@ -60,16 +61,27 @@ const styles = {
     textAlign: 'center'
   },
   hightlightClass: {
-    marginTop: '24px',
+    width: '650px',
+    height: '400px',
+    marginBottom: '12px',
     float: 'left'
   },
   imageParaAhli: {
-    marginBottom: '12px'
+    marginBottom: '12px',
+    width: '480px',
+    height: '400px'
   },
   headerCaption: {
     color: COLOR_WHITE,
     fontSize: '24px',
     fontFamily: 'Raleway'
+  },
+  overlay: {
+    position: 'absolute',
+    top: '20px',
+    left: '20px',
+    color: 'black',
+    backgroundColor: 'white'
   },
   '@font-face': [
     {

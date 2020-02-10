@@ -20,12 +20,13 @@ export default class Component extends React.Component {
         <HomeBase>
           <div className={classes.contentClass1}>
             <div className={classes.wrapper}>
+              <Typography variant="titleClass">Nama Ahli Pertama</Typography>
+              <Typography variant="caption">Budidaya Ikan Lele</Typography>
               <Player
                 playsInline
                 poster=""
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
               />
-              <Typography variant="title">Nama Ahli Pertama</Typography>
             </div>
           </div>
         </HomeBase>

@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HomeBase from '../../components/HomeBase';
-import { VIDEOS } from '../../configs';
+import { VIDEOS, ROUTES, IMAGES } from '../../configs';
 import { Grid } from '@material-ui/core';
+import { NewsHeaderCard } from 'react-ui-cards';
 import { Button, Typography } from '../../components/elements';
 
 export default class Component extends React.Component {
@@ -19,7 +20,7 @@ export default class Component extends React.Component {
         <HomeBase>
           <section>
             <video autoPlay muted loop className={classes.bgVideo}>
-              <source src={VIDEOS.BG} type="video/mp4" />
+              <source src={VIDEOS.BACKGROUND} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
             <div className={classes.content}>
@@ -37,21 +38,27 @@ export default class Component extends React.Component {
             </div>
             <div className={classes.content2}>
               <Typography variant="title"> Kelas Terbaru </Typography>
-              <div className={classes.latestClass}>
-                <img src="https://placeimg.com/640/480/animals" />
-              </div>
+              <NewsHeaderCard
+                href={ROUTES.DETAILCLASS()}
+                thumbnail={IMAGES.RICO_HUANG}
+                title="Ahli Marketing"
+                author="Rico Huang"
+                className={classes.latestClass}
+              />
             </div>
             <Grid container className={classes.content3}>
               <Grid item lg={6} md={12} sm={12} xs={12}>
-                <div className={classes.hightlightClass}>
-                  <img src="https://placeimg.com/640/480/animals" />
-                </div>
+                <NewsHeaderCard
+                  href={ROUTES.DETAILCLASS()}
+                  thumbnail={IMAGES.JAGOAN_UMKM}
+                  title="Jagoan UMKM"
+                  className={classes.hightlightClass}
+                />
               </Grid>
               <Grid item lg={6} md={12} sm={12} xs={12}>
                 <div className={classes.hightlightClassText}>
                   <Typography variant="title"> Jagoan UMKM </Typography>
                   <Typography variant="caption">
-                    {' '}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aliquam sit amet neque sed tortor ultrices facilisis nec et
                     odio. Mauris non sollicitudin nisl. Phasellus malesuada,
@@ -70,51 +77,57 @@ export default class Component extends React.Component {
               </div>
               <Grid container>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
-                  <img
-                    className={classes.imageParaAhli}
-                    src="https://placeimg.com/640/480/animals"
-                    width="480px"
-                    height="400px"
+                  <NewsHeaderCard
+                    href={ROUTES.DETAILCLASS()}
+                    thumbnail={IMAGES.RICO_HUANG}
+                    title="Ahli Marketing"
+                    author="Rico Huang"
+                    className={classes.latestClass}
                   />
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
-                  <img
+                  <NewsHeaderCard
+                    href={'/#'}
+                    thumbnail={IMAGES.SUBIAKTO_BRANDING}
+                    title="Membangun Branding"
+                    author="Subiakto"
                     className={classes.imageParaAhli}
-                    src="https://placeimg.com/640/480/animals"
-                    width="480px"
-                    height="400px"
                   />
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
-                  <img
+                  <NewsHeaderCard
+                    href={ROUTES.DETAILCLASS()}
+                    thumbnail={IMAGES.TETEN_MADSUKI}
+                    title="Menteri Koperasi dan UMKM"
+                    author="Teten Madsuki"
                     className={classes.imageParaAhli}
-                    src="https://placeimg.com/640/480/animals"
-                    width="480px"
-                    height="400px"
                   />
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
-                  <img
+                  <NewsHeaderCard
+                    href={ROUTES.DETAILCLASS()}
+                    thumbnail={IMAGES.GATOT_MUDJIONO}
+                    title="Ahli Pangan & Pertanian"
+                    author="Gatot Mudjiono"
                     className={classes.imageParaAhli}
-                    src="https://placeimg.com/640/480/animals"
-                    width="480px"
-                    height="400px"
                   />
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
-                  <img
+                  <NewsHeaderCard
+                    href={ROUTES.DETAILCLASS()}
+                    thumbnail={IMAGES.ELLU_WASLIAH}
+                    title="Dekranasda"
+                    author="Ellu Wasliah"
                     className={classes.imageParaAhli}
-                    src="https://placeimg.com/640/480/animals"
-                    width="480px"
-                    height="400px"
                   />
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
-                  <img
+                  <NewsHeaderCard
+                    href={ROUTES.DETAILCLASS()}
+                    thumbnail={IMAGES.DEWI_KANIASARI}
+                    title="Dinas Pariwisata"
+                    author="Dewi Kaniasari"
                     className={classes.imageParaAhli}
-                    src="https://placeimg.com/640/480/animals"
-                    width="480px"
-                    height="400px"
                   />
                 </Grid>
               </Grid>

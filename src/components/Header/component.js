@@ -207,19 +207,25 @@ export default class Component extends React.Component {
                 className={classes.dropdownContent}
                 onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
               >
-                Budidaya Lele
+                Marketing
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
                 onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
               >
-                Menanam Jagung
+                Branding
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
                 onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
               >
-                Bertani
+                Bisnis Model
+              </MenuItem>
+              <MenuItem
+                className={classes.dropdownContent}
+                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+              >
+                Lainya
               </MenuItem>
             </Menu>
             <MenuItem

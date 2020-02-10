@@ -59,7 +59,9 @@ const styles = {
     textAlign: 'center'
   },
   wrapper: {
-    width: '80%'
+    width: '80%',
+    maxHeight: '500px',
+    margin: 'auto'
   },
   '@font-face': [
     {

@@ -9,6 +9,11 @@ const styles = {
     fontWeight: '500',
     color: '#FFFFFF'
   },
+  titleClass: {
+    fontSize: '28px',
+    fontWeight: '500',
+    color: '#FFFFFF'
+  },
   caption: {
     fontSize: '14px',
     fontWeight: 'normal'

@@ -5,3 +5,5 @@ import videos from './videos';
 export const IMAGES = images;
 export const VIDEOS = videos;
 export const ROUTES = routes;
+
+export const USER_DATA_STORAGE = 'naikkelas_user_data';
