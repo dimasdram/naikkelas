@@ -1,7 +1,9 @@
 const videos = {
+  MATERI:
+    'https://storage.cloud.google.com/naik-kelas-60783.appspot.com/Cara%20Membuat%20Konsumen%20Membeli%20Apapun%20Yang%20Anda%20Tawarkan%20Tanpa%20BIlang%20Mahal%20-%20YouTube.mp4',
   BG: '/assets/video/rain.mp4',
   BACKGROUND:
-    'https://00e9e64bac64c026133608fd28d0ec69b4c8ac6311b50dc95c-apidata.googleusercontent.com/download/storage/v1/b/naik-kelas-60783.appspot.com/o/Kisah%20Sukses%20Pengusaha%20Umkm%20-%20Ilham%20Wirahadikusuma%20-%20Youtube-1.mp4?qk=AD5uMEv5bXa8QG4bpXyTsPjL1PHcr9zn5nO4IHHKTWdUGFUs596AiGy7RLVuYXWwIxvdQcHQHFhKenUfpn2iFiFFXJK274NJyQbP5fqUAa9LuTIHhu9wnafGB56XHn4N-fZZAvJ5_yeEirCgF2lEJBDhJ9xbp6u2618aS730RStZbsa13VhvqDH8wR8rtxInHSjepnt9f4uHnXG-Oz-K6DMtI_Fi-ZA7O7d9WCccRqm9hLIMhlpxMzCMQLS6cHWUfkcYUUCAQYpPQGda_7CU-FoG0kqxxHJyTXcfT2lJLqW5aSWQF9K4fDbm0A3eFsN6SCnDai2EcziW9C36mJ5VwOjbWUS2E_zDW6NZh9UhMm-Eg3hW6WAKwg9GFz9NEoA5aR0W2OXEMf4rN89hWBEbkJ_90dQLxA9bMv6UJZEZzK-eGjZqEXdqY-2YUlZnMYU6cZWjuxE1GetRBDExAwFv8O2xsoXvlkL-0ygTfDpJX2_-ru_v00GhjSac77m5KtJ0zd2nVqRntIVhRE62VvdvV022PPN44i5cQAi8bwjTPw2Ou2gU0Pg_jjbMFT6Mn7GXD02G24knnLT7tqXqeCdbKKif674je0eZUznJU2TFWVWAuKor-g7zc1T-0QZ-rqWlLaetCYLvH7YovM55wmDaqnr-8Js8Z_tXcDyuET7C_LLkMVMusPOUAqIPwGTh8ZZngsoEpDtZX6M8JHnDSpnwIlc0c0b45QequHYQS0PbJ6FUiDB5ME_yt0iNDHr365XFKnd5MVM027xlHPQMFXxn60Fga0gjbWUmY5wy7M-1ExHeNwh675DFdFYgV_cpIBfIYJ1xmOjN8eRLNWbIudQho84aTe5qcBV0BiYVKOptDFKo4iieYe_5Zoc3dlogmz4H_dKv4BQzKveKCc1uA3gE_DwrVpqC4gp6NQ'
+    'https://storage.cloud.google.com/naik-kelas-60783.appspot.com/Kisah%20Sukses%20Pengusaha%20Umkm%20-%20Ilham%20Wirahadikusuma%20-%20Youtube-1.mp4?authuser=0'
 };
 
 export default videos;

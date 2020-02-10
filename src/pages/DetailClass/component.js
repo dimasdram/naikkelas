@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HomeBase from '../../components/HomeBase';
-import { VIDEOS } from '../../configs';
-import { Grid } from '@material-ui/core';
-import { Button, Typography } from '../../components/elements';
+import { VIDEOS, IMAGES } from '../../configs';
+import { Typography } from '../../components/elements';
 import { Player } from 'video-react';
 
 export default class Component extends React.Component {
@@ -20,12 +19,12 @@ export default class Component extends React.Component {
         <HomeBase>
           <div className={classes.contentClass1}>
             <div className={classes.wrapper}>
-              <Typography variant="titleClass">Nama Ahli Pertama</Typography>
-              <Typography variant="caption">Budidaya Ikan Lele</Typography>
+              <Typography variant="titleClass">Rico Huang</Typography>
+              <Typography variant="caption">Ahli Digital Marketing</Typography>
               <Player
                 playsInline
-                poster=""
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                poster={IMAGES.RICO_HUANG}
+                src={VIDEOS.MATERI}
               />
             </div>
           </div>

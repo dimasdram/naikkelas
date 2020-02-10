@@ -1,3 +1,4 @@
 tools/*
 webpack.config.prod.js
 src/store/configureStore.js
+src/pages/LoginGoogle/*

@@ -15,7 +15,8 @@ export default class Component extends React.Component {
     this.state = {
       anchorEl: null,
       anchorProfil: null,
-      open: false
+      open: false,
+      isSignedin: false
     };
   }
 
@@ -91,7 +92,6 @@ export default class Component extends React.Component {
       open: false,
       anchorProfil: null
     });
-    // clearStorages();
     history.push(ROUTES.HOME());
   };
 
@@ -229,10 +229,10 @@ export default class Component extends React.Component {
               </MenuItem>
             </Menu>
             <MenuItem
-              className={
-                pathname === '/tentang-kami' ? classes.textActive : classes.text
+              className={classes.text}
+              onClick={() =>
+                (window.location.href = '../pages/LoginGoogle/login.html')
               }
-              onClick={this._handleClickAbout}
             >
               Sign In
             </MenuItem>
