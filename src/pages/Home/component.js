@@ -4,11 +4,61 @@ import HomeBase from '../../components/HomeBase';
 import { VIDEOS, ROUTES, IMAGES } from '../../configs';
 import { Grid } from '@material-ui/core';
 import { NewsHeaderCard } from 'react-ui-cards';
-import { Button, Typography } from '../../components/elements';
+import { Button, Typography, Dialog } from '../../components/elements';
 
 export default class Component extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false
+    };
+  }
   componentWillMount() {
     this.props.actions.getListOfDevelopers();
+  }
+
+  _handleOpenDialog = () => {
+    this.setState({
+      open: !this.state.open
+    });
+  };
+  _handleCloseDialog = () => {
+    this.setState({
+      open: !this.state.open
+    });
+  };
+
+  _renderDialog() {
+    const { classes } = this.props;
+    const { open } = this.state;
+    return (
+      <div className={classes.rootDialog}>
+        <Dialog onClose={this._handleCloseDialog} open={open}>
+          <div className={classes.center}>
+            <img src={IMAGES.BRIVA} />
+            <hr />
+            <Typography
+              className={classes.textDialog}
+              color="black"
+              variant="formLabelSecondary"
+            >
+              NO VA Anda adalah : 1301198550
+            </Typography>
+          </div>
+          <div>
+            <Button
+              background="Normal"
+              className={classes.buttonDialog}
+              color="white"
+              name="btn1"
+              onClick={this._handleCloseDialog}
+            >
+              OKE
+            </Button>
+          </div>
+        </Dialog>
+      </div>
+    );
   }
 
   render() {
@@ -19,6 +69,7 @@ export default class Component extends React.Component {
       return (
         <HomeBase>
           <section>
+            {this._renderDialog()}
             <video autoPlay muted loop className={classes.bgVideo}>
               <source src={VIDEOS.BACKGROUND} type="video/mp4" />
               Your browser does not support HTML5 video.
@@ -35,7 +86,7 @@ export default class Component extends React.Component {
               <Button
                 background="Normal"
                 color="white"
-                onClick={() => alert('Sedang Dalam Maintenance')}
+                onClick={this._handleOpenDialog}
               >
                 Mulai Kelas
               </Button>

@@ -11,7 +11,10 @@ const images = {
   ELLU_WASLIAH: '/assets/dekranasda_ellu_wasliah.png',
 
   //JAGOAN UMKM
-  JAGOAN_UMKM: '/assets/jagoan_umkm.png'
+  JAGOAN_UMKM: '/assets/jagoan_umkm.png',
+
+  //BRIVA
+  BRIVA: '/assets/briva.png'
 };
 
 export default images;

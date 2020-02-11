@@ -1,11 +1,18 @@
 import { COLOR_WHITE, COLOR_PAPER_BAKCGROUND } from '../../styles';
 const styles = {
+  buttonDialog: {
+    marginLeft: '100px',
+    minWidth: '121px'
+  },
   bgVideo: {
     right: 0,
     position: 'absolute',
     bottom: '100px',
     minWidth: '100%',
     minHeight: '100%'
+  },
+  rootDialog: {
+    textAlign: 'center'
   },
   content: {
     top: '300px',
@@ -75,6 +82,11 @@ const styles = {
     color: COLOR_WHITE,
     fontSize: '24px',
     fontFamily: 'Raleway'
+  },
+  dialog: {
+    marginLeft: '15px',
+    textTransform: 'capitalize',
+    width: '267px'
   },
   overlay: {
     position: 'absolute',

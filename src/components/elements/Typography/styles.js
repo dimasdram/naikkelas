@@ -108,6 +108,7 @@ const styles = {
   formLabelSecondary: {
     fontSize: '14px',
     fontWeight: 'normal',
+    textAlign: 'center',
     letterSpacing: '0.1em',
     lineHeight: '16px'
   },

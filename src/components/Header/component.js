@@ -144,6 +144,7 @@ export default class Component extends React.Component {
       classes,
       location: { pathname }
     } = this.props;
+
     const { anchorEl, anchorProfil } = this.state;
     return (
       <div>

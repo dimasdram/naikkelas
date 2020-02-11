@@ -1,7 +1,7 @@
 import { ACTIONS } from '../../constants';
 
 export function getListOfDevelopers() {
-  return (dispatch) => {
+  return dispatch => {
     dispatch({ type: ACTIONS.LOADING });
 
     return setTimeout(() => {
