@@ -170,19 +170,19 @@ export default class Component extends React.Component {
             >
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Mikro
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Kecil
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Menengah
               </MenuItem>
@@ -205,25 +205,25 @@ export default class Component extends React.Component {
             >
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Marketing
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Branding
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Bisnis Model
               </MenuItem>
               <MenuItem
                 className={classes.dropdownContent}
-                onClick={() => history.push(ROUTES.LAYANAN('kategori'))}
+                onClick={() => alert('Sedang Dalam Maintenance')}
               >
                 Lainya
               </MenuItem>

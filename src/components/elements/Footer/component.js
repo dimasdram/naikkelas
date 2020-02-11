@@ -86,17 +86,22 @@ export default class Component extends React.Component {
               > Ahli
               <Link className={classes.link} to={ROUTES.HOME()}>
                 <Typography color="white" variant="formCaptionParagraphLink">
-                  > Ahli A
+                  > Marketing
                 </Typography>
               </Link>
               <Link className={classes.link} to={ROUTES.HOME()}>
                 <Typography color="white" variant="formCaptionParagraphLink">
-                  > Ahli B
+                  > Branding
                 </Typography>
               </Link>
               <Link className={classes.link} to={ROUTES.HOME()}>
                 <Typography color="white" variant="formCaptionParagraphLink">
-                  > Ahli C
+                  > Bisnis Model
+                </Typography>
+              </Link>
+              <Link className={classes.link} to={ROUTES.HOME()}>
+                <Typography color="white" variant="formCaptionParagraphLink">
+                  > Lainya
                 </Typography>
               </Link>
             </Typography>

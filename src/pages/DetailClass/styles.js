@@ -1,11 +1,10 @@
 import { COLOR_WHITE, COLOR_PAPER_BAKCGROUND } from '../../styles';
 const styles = {
-  bgVideo: {
-    right: 0,
-    position: 'absolute',
-    bottom: '100px',
-    minWidth: '100%',
-    minHeight: '100%'
+  materi: {
+    marginBottom: '-200px'
+  },
+  materiText: {
+    marginTop: '280px'
   },
   contentClass1: {
     top: '50px',

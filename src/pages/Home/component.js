@@ -32,7 +32,11 @@ export default class Component extends React.Component {
                 Belajar bersama para Jagoan UMKM dan para ahli dibidangnya
               </span>
               <br />
-              <Button background="Normal" color="white">
+              <Button
+                background="Normal"
+                color="white"
+                onClick={() => alert('Sedang Dalam Maintenance')}
+              >
                 Mulai Kelas
               </Button>
             </div>
@@ -49,7 +53,7 @@ export default class Component extends React.Component {
             <Grid container className={classes.content3}>
               <Grid item lg={6} md={12} sm={12} xs={12}>
                 <NewsHeaderCard
-                  href={ROUTES.DETAILCLASS()}
+                  href={'/#'}
                   thumbnail={IMAGES.JAGOAN_UMKM}
                   title="Jagoan UMKM"
                   className={classes.hightlightClass}
@@ -59,14 +63,11 @@ export default class Component extends React.Component {
                 <div className={classes.hightlightClassText}>
                   <Typography variant="title"> Jagoan UMKM </Typography>
                   <Typography variant="caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam sit amet neque sed tortor ultrices facilisis nec et
-                    odio. Mauris non sollicitudin nisl. Phasellus malesuada,
-                    augue at facilisis tincidunt, lacus nisi maximus elit, a
-                    viverra felis orci nec ex. In viverra finibus dictum. Nunc
-                    ac rhoncus urna. Maecenas hendrerit diam a lacus venenatis,
-                    eu placerat enim tristique. Mauris sodales auctor aliquet.
-                    Mauris ac dictum felis.
+                    Berawal dari pelatihan UMKM yang diadakan oleh BUMN saya
+                    mendapatkan banyak sekali pengalaman yang didapat. Saya bisa
+                    mengembangkan bisnis yang telah saya bangun sejak tahun
+                    2010. Hingga pada akhirnya saya bisa mendapatkan revenue
+                    sebesar 1 Miliar per bulan. ...
                   </Typography>
                 </div>
               </Grid>
@@ -96,7 +97,7 @@ export default class Component extends React.Component {
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
                   <NewsHeaderCard
-                    href={ROUTES.DETAILCLASS()}
+                    href={'/#'}
                     thumbnail={IMAGES.TETEN_MADSUKI}
                     title="Menteri Koperasi dan UMKM"
                     author="Teten Madsuki"
@@ -105,7 +106,7 @@ export default class Component extends React.Component {
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
                   <NewsHeaderCard
-                    href={ROUTES.DETAILCLASS()}
+                    href={'/#'}
                     thumbnail={IMAGES.GATOT_MUDJIONO}
                     title="Ahli Pangan & Pertanian"
                     author="Gatot Mudjiono"
@@ -114,7 +115,7 @@ export default class Component extends React.Component {
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
                   <NewsHeaderCard
-                    href={ROUTES.DETAILCLASS()}
+                    href={'/#'}
                     thumbnail={IMAGES.ELLU_WASLIAH}
                     title="Dekranasda"
                     author="Ellu Wasliah"
@@ -123,7 +124,7 @@ export default class Component extends React.Component {
                 </Grid>
                 <Grid item lg={4} md={6} sm={12} xs={12}>
                   <NewsHeaderCard
-                    href={ROUTES.DETAILCLASS()}
+                    href={'/#'}
                     thumbnail={IMAGES.DEWI_KANIASARI}
                     title="Dinas Pariwisata"
                     author="Dewi Kaniasari"
